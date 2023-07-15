@@ -4,8 +4,9 @@ In this proof of concept (POC), I have developed a streamlined contact applicati
 
 1. Set the enviroment
     1. Ensure you have Python installed on your machine
-    1. Install the sqlite3 library, which comes pre-installed with Python
+    1. Learn that SQLite3 comes pre-installed with Python
     1. Using the Python sqlite3 library
+        1. Connect to a memory Database 
     1. Create a table named contacts with columns like id, firstname, lastname, email, and phone
 &nbsp;     
  1. Create functions for basic operations
@@ -17,8 +18,19 @@ In this proof of concept (POC), I have developed a streamlined contact applicati
     2. Implement a menu-driven uesr interface.
         
 # What I'm going to learn
-- Basic SQL
-- SQL lite
-- Diagram.
-- Extension: Excel Viewer
-- Create an enviroment
+- SQL
+    - SQLite
+    - Queries for a CRUD operation:
+        - INSERT -> CREATE
+        - SELECT -> READ
+        - UPDATE -> UPDATE
+        - DELETE -> DELETE
+- Documentation:
+    - Entity Relationship Diagram (ERD) - Only Table Objecs
+- Extensions: 
+    - Excel Viewer
+    - Drawio
+- Python: 
+    - Create Enviroment with PIP
+    - Introduction To Classes
+    - Read a file
