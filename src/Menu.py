@@ -6,8 +6,8 @@ class Menu:
 
     def __init__(self):
         option = ""
-        self.render_menu()
         while option != 'F':
+            self.render_menu()
             option = self.get_option()
             self.call_function(option)
 
@@ -23,7 +23,6 @@ class Menu:
         return option
 
     def call_function(self ,option):
-        function = "EMPTY" 
         if option == "A":
              first_name = input("Enter First name: ")
              last_name = input("Enter Last Name: ")
@@ -36,12 +35,13 @@ class Menu:
              last_name = input("Enter the last Name: ")
              self.crud_instance.read(last_name)
         elif option == "D":
-             function = "UPDATE CONTACT"
+            field_to_change = input("Field to Change: ")
+            old_value = input("old Value: ")
+            new_value = input("New Value: ")
+            self.crud_instance.update(field_to_change, old_value, new_value)
         elif option == "E":
-             function = "DELETE CONTACT"
-        elif option == "F":
-             function = "EXIT PROGRAM"
-        print(function)
+            last_name = input("Enter the last Name: ")
+            self.crud_instance.delete(last_name)
             
     
     def _print_box(self):
