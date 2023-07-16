@@ -24,11 +24,11 @@ class CRUD():
         if field_to_change == 'first_name':
             self.cur.execute(f'''UPDATE contact SET first_name="{new_value}" WHERE first_name ="{old_value}"''')
         elif field_to_change == 'last_name':
-            print("update last name")
+            self.cur.execute(f'''UPDATE contact SET last_name="{new_value}" WHERE last_name ="{old_value}"''')
         elif field_to_change == 'email':
-            print("update email")
+            self.cur.execute(f'''UPDATE contact SET email="{new_value}" WHERE email ="{old_value}"''')
         elif field_to_change == 'phone':
-            print("update phone")
+            self.cur.execute(f'''UPDATE contact SET phone="{new_value}" WHERE phone ="{old_value}"''')
 
     def delete(self, last_name):
         self.cur.execute(f'''DELETE FROM contact WHERE last_name ="{last_name}"''')
