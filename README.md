@@ -16,7 +16,21 @@ In this proof of concept (POC), I have developed a streamlined contact applicati
         1. Update a contact 
         1. Delete a contact
     2. Implement a menu-driven uesr interface.
+
+# Table Structure
+
+You can find the creation and the insertion SQL scripts in the documents table.
+
+# Database and intial data 
+
+You are going to work with a database in memory with the following structure
+
+![Table](documents\database_diagram.png)
         
+and the initial data is the following
+
+![Data](documents\data.png)
+
 # What I'm going to learn
 - SQL
     - SQLite
@@ -34,3 +48,4 @@ In this proof of concept (POC), I have developed a streamlined contact applicati
     - Create Enviroment with PIP
     - Introduction To Classes
     - Read a file
+
